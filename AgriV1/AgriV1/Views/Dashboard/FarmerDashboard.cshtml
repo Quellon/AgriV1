@@ -9,20 +9,51 @@
 
 @{
 }
-<div class="farmer-background">
-    <div class="container">
-        <h2 class="text-light">Hello Farmer</h2>
+@* <div class="farmer-background"> *@
+@*     <div class="container"> *@
+@*         <h2 class="text-light">Hello Farmer</h2> *@
 
-        <form method="get" asp-controller="Product" asp-action="Create">
-            <button type="submit" class="btn btn-info mb-3">Add Product</button>
-        </form>
+@*         <form method="get" asp-controller="Product" asp-action="Create"> *@
+@*             <button type="submit" class="btn btn-info mb-3">Add Product</button> *@
+@*         </form> *@
 
-        <form method="get" asp-controller="Product" asp-action="MyProducts">
-            <button type="submit" class="btn btn-info mb-3">View My Products</button>
-        </form>
+@*         <form method="get" asp-controller="Product" asp-action="MyProducts"> *@
+@*             <button type="submit" class="btn btn-info mb-3">View My Products</button> *@
+@*         </form> *@
 
-        <form method="get" asp-controller="Account" asp-action="EditProfile">
-            <button type="submit" class="btn btn-info">Edit My Profile</button>
-        </form>
+@*         <form method="get" asp-controller="Account" asp-action="EditProfile"> *@
+@*             <button type="submit" class="btn btn-info">Edit My Profile</button> *@
+@*         </form> *@
+@*     </div> *@
+@* </div> *@
+
+
+<div class="farmer-background py-5">
+    <div class="container text-center text-light">
+        <h2 class="mb-4">Hello Farmer</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-3 mb-4">
+                <form method="get" asp-controller="Product" asp-action="Create">
+                    <button type="submit" class="btn btn-info btn-block w-100">Add Product</button>
+                </form>
+                <p class="mt-2">Submit details about your agricultural products.</p>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <form method="get" asp-controller="Product" asp-action="MyProducts">
+                    <button type="submit" class="btn btn-info btn-block w-100">View My Products</button>
+                </form>
+                <p class="mt-2">View all products you've submitted.</p>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <form method="get" asp-controller="Home" asp-action="EditProfile">
+                    <button type="submit" class="btn btn-info btn-block w-100">Edit My Profile</button>
+                </form>
+                <p class="mt-2">Update your personal and farm-related details.</p>
+            </div>
+        </div>
     </div>
 </div>
+

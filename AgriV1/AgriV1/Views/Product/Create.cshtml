@@ -5,6 +5,8 @@
 }
 @model AgriV1.ViewModels.ProductViewModel
 
+
+<div class="container">
 <h2>Add New Product</h2>
 
 <form asp-action="Create" method="post">
@@ -28,7 +30,11 @@
 
     <button type="submit" class="btn btn-primary">Add Product</button>
 </form>
+<a asp-controller="Dashboard" asp-action="FarmerDashboard" class="btn btn-secondary mb-3">
+    ← Back to Dashboard
+</a>
 
+</div>
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }

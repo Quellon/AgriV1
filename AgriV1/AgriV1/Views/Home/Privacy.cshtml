@@ -1,6 +1,52 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Upcoming Features";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="container mt-5">
+    <h1 class="mb-4">@ViewData["Title"]</h1>
+
+    <p>We are continuously working to improve the Agri-Energy platform. Below are some exciting features you can look forward to in the near future:</p>
+
+    <ul class="list-group list-group-flush mt-4">
+        <li class="list-group-item">
+            <strong>Chat/Discussion:</strong>
+            <br />
+            A community-driven space where farmers and green energy professionals can connect, share knowledge, and discuss best practices.
+        </li>
+
+        <li class="list-group-item">
+            <strong>Payment Inputs and Payment Options:</strong>
+            <br />
+            Integration of secure payment methods to facilitate transactions related to products, services, and funding.
+        </li>
+
+        <li class="list-group-item">
+            <strong>Redesigned Responsive UI:</strong>
+            <br />
+            A more modern, user-friendly, and mobile-optimized interface to enhance the overall user experience.
+        </li>
+
+        <li class="list-group-item">
+            <strong>Educational and Training Resources:</strong>
+            <br />
+            Access to online courses, webinars, and workshops focusing on the integration of green energy technologies in agriculture.
+            <br />
+            Learn about the benefits and practical steps for adopting renewable energy on your farm.
+        </li>
+
+        <li class="list-group-item">
+            <strong>Project Collaboration and Funding Opportunities:</strong>
+            <br />
+            A platform to connect farmers and energy experts for joint green energy projects.
+            <br />
+            Find information on available grants, subsidies, and other funding sources for sustainable initiatives.
+        </li>
+    </ul>
+
+    <div class="mt-5">
+        <a asp-controller="Dashboard" asp-action="EmployeeDashboard" class="btn btn-secondary">
+            ← Back to Dashboard
+        </a>
+    </div>
+</div>
+

@@ -6,22 +6,53 @@
 
 @model IEnumerable<AgriV1.Areas.Identity.Data.AgriV1User>
 
-<h2>Registered Farmers</h2>
+@* <div class="container"> *@
+@* <h2>Registered Farmers</h2> *@
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Email</th>
-            <th>Username</th>
-        </tr>
-    </thead>
-    <tbody>
+@* <table class="table table-bordered"> *@
+@*     <thead> *@
+@*         <tr> *@
+@*             <th>Email</th> *@
+@*             <th>Username</th> *@
+@*         </tr> *@
+@*     </thead> *@
+@*     <tbody> *@
+@*         @foreach (var farmer in Model) *@
+@*         { *@
+@*             <tr> *@
+@*                 <td>@farmer.Email</td> *@
+@*                 <td>@farmer.UserName</td> *@
+@*             </tr> *@
+@*         } *@
+@*     </tbody> *@
+@* </table> *@
+
+@* <a asp-controller="Dashboard" asp-action="EmployeeDashboard" class="btn btn-secondary mb-3"> *@
+@*     ← Back to Dashboard *@
+@* </a> *@
+@* </div> *@
+
+<div class="container">
+    <h2 class="mb-4">Registered Farmers</h2>
+
+    <div class="row">
         @foreach (var farmer in Model)
         {
-            <tr>
-                <td>@farmer.Email</td>
-                <td>@farmer.UserName</td>
-            </tr>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">@farmer.UserName</h5>
+                        <p class="card-text">
+                            <strong>Email:</strong><br />
+                            @farmer.Email
+                        </p>
+                    </div>
+                </div>
+            </div>
         }
-    </tbody>
-</table>
+    </div>
+
+    <a asp-controller="Dashboard" asp-action="EmployeeDashboard" class="btn btn-secondary mt-4">
+        ← Back to Dashboard
+    </a>
+</div>
