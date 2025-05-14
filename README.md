@@ -1,4 +1,4 @@
-## Farmer Product Management System
+## Farmer Product Management System - Agri-Energy
 
  ## Overview
 
@@ -64,12 +64,12 @@ Run the project using your preferred IDE or terminal command.
 
 ## User Credentials (For Demo)
 
-Farmer:
-Email: farmer@gmail.com
-Password: Password1!
-Employee:
-Username: test1@gmail.com
-Password:  Password1!
+- Farmer:
+ - Email: farmer@gmail.com
+ - Password: Password1!
+- Employee:
+ - Username: test1@gmail.com
+ - Password:  Password1!
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
