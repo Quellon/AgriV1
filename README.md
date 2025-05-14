@@ -46,19 +46,23 @@ The Farmer Product Management System is a web-based application designed to stre
 
 ## Technologies Used
 
-- Backend: ASP.NET MVC, C#
-- Frontend: HTML/CSS
-- Database: SSMS
-- Authentication: Role-based login using ASP.NET Identity
+- **Backend**: ASP.NET MVC (C#)
+- **Frontend**: Razor Pages, HTML, CSS, Bootstrap
+- **Database**: SQL Server Management Studio (SSMS)
+- **Authentication**: ASP.NET Identity (Role-based)
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Setup Instructions
 
-Clone the repository.
-Set up the database using the provided schema and seed data.
-Configure environment variables for database connection and authentication.
-Run the project using your preferred IDE or terminal command.
+Follow these steps to set up the development environment:
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/your-username/agri-energy.git
+cd agri-energy
+```
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
