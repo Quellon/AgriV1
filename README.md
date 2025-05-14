@@ -6,7 +6,7 @@ The Farmer Product Management System is a web-based application designed to stre
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
-**Features**
+## Features
 
 1. Database Development and Integration
     Designed and implemented a relational database to manage detailed records of farmers and their products.
@@ -42,22 +42,27 @@ The Farmer Product Management System is a web-based application designed to stre
       Smartphones
      Accurate and clear data presentation throughout the interface to minimize errors and improve usability.
 
-**Technologies Used**
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+## Technologies Used
 
 Backend: [Specify language/framework, e.g., ASP.NET Core, Node.js, Django]
 Frontend: [Specify framework, e.g., HTML/CSS, React, Angular]
 Database: [Specify, e.g., SQL Server, MySQL, PostgreSQL]
 Authentication: Role-based login using [e.g., ASP.NET Identity, Firebase Auth, JWT]
 
-**Setup Instructions**
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+## Setup Instructions
 
 Clone the repository.
 Set up the database using the provided schema and seed data.
 Configure environment variables for database connection and authentication.
 Run the project using your preferred IDE or terminal command.
 
+-------------------------------------------------------------------------------------------------------------------------------------------
 
-**User Credentials (For Demo)**
+## User Credentials (For Demo)
 
 Farmer:
 Email: farmer@gmail.com
@@ -66,7 +71,10 @@ Employee:
 Username: test1@gmail.com
 Password:  Password1!
 
-**License**
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+
+## License
 
 This project is open-source and available under the MIT License.
 
