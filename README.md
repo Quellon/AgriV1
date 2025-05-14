@@ -64,6 +64,16 @@ git clone https://github.com/your-username/agri-energy.git
 cd agri-energy
 ```
 
+### Step 2: Database Setup
+Open SSMS.
+Run the SQL script provided in /Database/Seed.sql or set up using ApplicationDbContext migrations.
+Make sure the connection string in appsettings.json matches your local database.
+### Step 3: Configure the Project
+Open the solution in Visual Studio.
+Restore NuGet packages.
+Build the project to ensure all dependencies are correctly installed.
+### Step 4: Run the Application
+Press F5 in Visual Studio or press teh run button in Visula Studio
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 ## User Credentials (For Demo)
