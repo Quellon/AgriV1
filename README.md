@@ -77,6 +77,15 @@ cd agri-energy
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
+## Coming Soon
+
+- Chat and Discussion Boards
+- Payment Inputs and Options
+- Redesign of UI with enhanced responsiveness
+- Educational Content and Webinars
+- Project Collaboration and Green Energy Grants Information
+
+-------------------------------------------------------------------------------------------------------------------------------------------
 
 ## License
 
