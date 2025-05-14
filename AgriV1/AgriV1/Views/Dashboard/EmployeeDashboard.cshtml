@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@* <div class="container"> *@
+@* <h2>Hello Employee</h2> *@
+
+@* <form method="get" asp-controller="Product" asp-action="AllProducts"> *@
+@*     <button type="submit" class="btn btn-success">View All Farmer Products</button> *@
+@* </form> *@
+
+@* <form method="get" asp-area="Identity" asp-page="/Account/Register"> *@
+@*     <button type="submit" class="btn btn-primary">Register Farmer</button> *@
+@* </form> *@
+
+@* <form method="get" asp-controller="Dashboard" asp-action="AllFarmers"> *@
+@*     <button type="submit" class="btn btn-info">View All Farmers</button> *@
+@* </form> *@
+@* </div> *@
+
+<div class="employee-background">
+    <div class="container">
+        <h2 class="text-light">Hello Employee</h2>
+
+        <form method="get" asp-controller="Product" asp-action="AllProducts" class="mb-3">
+            <button type="submit" class="btn btn-info">MarketPlace</button>
+        </form>
+
+        <form method="get" asp-area="Identity" asp-page="/Account/Register" class="mb-3">
+            <button type="submit" class="btn btn-info">Register Farmer</button>
+        </form>
+
+        <form method="get" asp-controller="Product" asp-action="AllFarmers" class="mb-3">
+            <button type="submit" class="btn btn-info">View All Farmers</button>
+        </form>
+    </div>
+</div>
+
+

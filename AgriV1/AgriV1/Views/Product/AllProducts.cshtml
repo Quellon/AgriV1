@@ -1,0 +1,81 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<AgriV1.Models.Product>
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+<div class="container">
+<h2>All Products Submitted by Farmers</h2>
+
+
+<form method="get" asp-controller="Product" asp-action="AllProducts" class="mb-4">
+
+    <div class="col-md-3">
+    <label for="farmerId">Farmer:</label>
+    <select name="farmerId" class="form-control">
+        <option value="">-- All Farmers --</option>
+        @foreach (var farmer in ViewBag.Farmers)
+        {
+                <option value="@farmer.Id" selected="@(HttpContextAccessor.HttpContext.Request.Query["farmerId"] == farmer.Id ? "selected" : null)">
+                    @farmer.Email
+                </option>
+        }
+    </select>
+</div>
+
+    <div class="form-group row">
+        <div class="col-md-3">
+            <label>Start Date:</label>
+            <input type="date" name="startDate" class="form-control"
+                   value="@HttpContextAccessor.HttpContext.Request.Query["startDate"]" />
+        </div>
+        <div class="col-md-3">
+            <label>End Date:</label>
+            <input type="date" name="endDate" class="form-control"
+                   value="@HttpContextAccessor.HttpContext.Request.Query["endDate"]" />
+        </div>
+        <div class="col-md-3">
+        <label for="category">Category:</label>
+        <select name="category" class="form-control">
+            <option value="">-- All Categories --</option>
+                @foreach (var cat in ViewBag.Categories as List<string>)
+                {
+                    <option value="@cat" selected="@(HttpContextAccessor.HttpContext.Request.Query["category"] == cat ? "selected" : null)">
+                        @cat
+                    </option>
+                }
+        </select>
+    </div>
+        <div class="col-md-3 align-self-end">
+            <button type="submit" class="btn btn-primary">Filter</button>
+        </div>
+    </div>
+</form>
+
+
+
+<table class="table table-bordered table-striped">
+        <thead class="table-dark">
+        <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Production Date</th>
+            <th>Farmer Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Name</td>
+                <td>@product.Category</td>
+                <td>@product.ProductionDate.ToShortDateString()</td>
+                <td>@product.Farmer?.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>
