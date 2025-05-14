@@ -29,6 +29,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AgriV1.Controllers
 {
+    //Author: Theo Walcot12
+    //Accessable: https://stackoverflow.com/questions/31219704/how-to-connect-to-sql-server-using-asp-net-mvc-web-application
+    //Date Accessed: 12 May 2025
     public class DashboardController : Controller
     {
         private readonly UserManager<AgriV1User> _userManager;

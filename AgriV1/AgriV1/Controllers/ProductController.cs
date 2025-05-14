@@ -9,7 +9,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AgriV1.Controllers
 {
-    
+
+    //Author: Theo Walcot12
+    //Accessable: https://stackoverflow.com/questions/31219704/how-to-connect-to-sql-server-using-asp-net-mvc-web-application
+    //Date Accessed: 12 May 2025
     public class ProductController : Controller
     {
         private readonly ApplicationDbContext _context;
